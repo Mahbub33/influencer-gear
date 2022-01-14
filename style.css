@@ -45,6 +45,10 @@ main {
     margin: Auto;
 }
 
+.prebook-area {
+    display: flex;
+}
+
 .prebook-header {
     font-size: 52px;
 
@@ -56,4 +60,19 @@ main {
     background-color:#d1d8e0;
     padding: 10px 35px;
     border-radius: 20px;
-    font-weight: 500;
+ }
+
+ .logo-area {
+     margin: 60px 0;
+     width: auto;
+     height: 110px;
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     border-top: 4px solid lightgray;
+     border-bottom: 4px solid lightgray;
+    }
+
+.logo-area a img {
+    padding-top: 35px;
+    align-items: center;
+}
