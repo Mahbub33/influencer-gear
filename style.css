@@ -42,28 +42,33 @@ nav {
 
 main {
     /* border: 1px solid red; */
-    max-width: 1200px;
+    max-width: 1077px;
     margin: Auto;
     padding-top: 100px;
 }
 
-.prebook-area>div {
-    /* border: 1px solid red; */
-    padding: 0 50px 15px 20px;
+.prebook-area {
+    max-width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+/* .prebook-area>div {
+    border: 1px solid red;
+    padding: 0 50px 15px 20px;
+} */
 
 .prebook-area > Div > H1 +p {
     margin-bottom: 30px;
+    padding:25px;
     text-align: justify;
 }
 
-.prebook-area {
-    display: flex;
-}
 
 .prebook-header {
     font-size: 52px;
     margin-bottom:0;
+    padding: 25px;
 
 }
 
@@ -75,6 +80,10 @@ main {
     padding: 10px 35px;
     border-radius: 20px;
  }
+
+  .prebook-photo img {
+     width:100%;
+ } 
 
  .logo-area {
      margin: 125px 0;
@@ -102,11 +111,13 @@ main {
     /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap:1px;
+    
 }
 
 .gear {
     /* border: 1px solid red; */
-    width: 329px;
+    width: 300px;
     height: 476px;
     margin: 15px;
     padding: 17px;
@@ -116,8 +127,9 @@ main {
 
 
 .gear-photo img {
-    width: 329px; 
-    height: 256px;
+    /* border:1px solid blue; */
+    max-width: 100%; 
+    height: auto;
 }
 
 .gear-name {
@@ -164,3 +176,63 @@ footer a {
 .footer-anchor{
     color:white;
 }
+
+
+
+/* Media Query */
+
+@media only screen and (max-width:688px) {
+    .nav-header {
+        font-size: 25px;
+    }
+    
+    .nav-link {
+        display: none;
+    }
+
+    .main,
+    .popular-collection {
+        width:100%;
+    }
+
+    .prebook-area,
+    .popular-collection {
+            max-width: 100%;
+            height: auto;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    .prebook-area,
+    .popular-collection {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+    header,
+    .logo-area
+     {
+        display: none;
+    }
+    }
+
+
+
+
+    /* Trash */
+    /* 
+    .prebook-area {
+        width:100%;
+    }
+
+    .prebook-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+
+    
+} */
