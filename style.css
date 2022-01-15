@@ -183,7 +183,8 @@ footer a {
 
 @media only screen and (max-width:688px) {
     .nav-header {
-        font-size: 25px;
+        font-size: 20px;
+        
     }
     
     .nav-link {
@@ -191,12 +192,12 @@ footer a {
     }
 
     .main,
-    .popular-collection {
+    .pgears {
         width:100%;
     }
 
     .prebook-area,
-    .popular-collection {
+    .gears {
             max-width: 100%;
             height: auto;
             grid-template-columns: repeat(1, 1fr);
@@ -208,11 +209,25 @@ footer a {
 
 
 
+/*     
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player, .blog, .course {
+        flex-direction: column;
+    } */
 
 
 
 
-    header,
+
+
+
+    
     .logo-area
      {
         display: none;
