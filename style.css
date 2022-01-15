@@ -12,8 +12,8 @@ body {
 nav {
     width: 100%;
     height: 80px;
-    background-color: #d1d8e0;
-    color: black;
+    background-color: #FF6363;
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -21,12 +21,11 @@ nav {
 }
 
 .nav-menu:visited {
-    color: black;
+    color: white;
 }
 
 .nav-header {
-    border: 2px solid red;
-    font-size: 24px;
+        font-size: 24px;
 }
 
 .nav-link a {
@@ -44,6 +43,7 @@ nav {
 main {
     max-width: 1047px;
     margin: Auto;
+    padding-top: 100px;
 }
 
 .prebook-area {
@@ -56,15 +56,16 @@ main {
 }
 
  .anchor {
-    color: black;
+    color: white;
+    font-weight: 600;
     text-decoration: none;
-    background-color:#d1d8e0;
+    background-color:#FF6363;
     padding: 10px 35px;
     border-radius: 20px;
  }
 
  .logo-area {
-     margin: 60px 0;
+     margin: 125px 0;
      width: auto;
      height: 110px;
      display: flex;
@@ -80,7 +81,8 @@ main {
 
 /* Popular Collection Area */
 
-.popular-collection {
+.popular-collection h2{
+    text-align-last: center;
     
 }
 
@@ -102,22 +104,36 @@ main {
 }
 
 .gear-photo img {
-    width: 300px; 
+    width: 329px; 
     height: 256px;
     margin:;
 }
 
 .gear-name {
+    font-size: 28px;
+    margin-top:5px;
+}
 
+.gear-name+p {
+    font-size: 24px;
+    margin:0;
 }
 
 .gear-rating {
 
+}
+
+.full-star {
+    color: gold;
+}
+
+.half-star {
+    color: gold;
 }
 .gear-rating span{
     padding-left: 10px;
 }
 
 .gear-other-info {
-
+    font-size: 14px;
 }
