@@ -167,14 +167,21 @@ main {
 /* top influencer */
 
 .influencers {
+    background-color:#FF6363;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.influencer-photo{
+    border-radius: 5px;
 }
 
 .influencer-photo img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
     /* footer */
