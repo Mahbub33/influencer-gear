@@ -41,7 +41,6 @@ nav {
  /* Prebook area starts*/
 
 main {
-    /* border: 1px solid red; */
     max-width: 1077px;
     margin: Auto;
     padding-top: 100px;
@@ -53,23 +52,16 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
-/* .prebook-area>div {
-    border: 1px solid red;
-    padding: 0 50px 15px 20px;
-} */
-
 .prebook-area > Div > H1 +p {
     margin-bottom: 30px;
     padding:25px;
     text-align: justify;
 }
 
-
 .prebook-header {
     font-size: 52px;
     margin-bottom:0;
     padding: 25px;
-
 }
 
  .anchor {
@@ -109,7 +101,6 @@ main {
 }
 
 .gears {
-    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap:1px;
@@ -117,7 +108,6 @@ main {
 }
 
 .gear {
-    /* border: 1px solid red; */
     width: 300px;
     height: 476px;
     margin: 15px;
@@ -128,7 +118,6 @@ main {
 
 
 .gear-photo img {
-    /* border:1px solid blue; */
     max-width: 100%; 
     height: auto;
 }
@@ -182,6 +171,7 @@ main {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    box-shadow: 5px 5px 25px red;
 }
 
     /* footer */
@@ -206,18 +196,14 @@ footer a {
 
 
 /* --------------------------------------------------------
-                      Media Query */
+                      Media Query 
+    --------------------------------------------------------*/
 
 @media only screen and (max-width:576px) {
     .nav-header {
         font-size: 18px;
     }
     
-    .nav-link,
-    .logo-area {
-        display: none;
-    }
-
     .main,
     .gears {
         width:100%;
@@ -234,6 +220,13 @@ footer a {
         flex-direction: column;
     }
 
+    .nav-link,
+    .logo-area {
+        display: none;
+    }
+
+}
+
 
     /* Tablet     Tablet     Tablet */
 
@@ -246,12 +239,7 @@ footer a {
             background-color: green;
     
         }
-        
-        .nav-link,
-        .logo-area {
-            display: none;
-        }
-    
+            
         .main,
         .gears {
             width:100%;
@@ -263,38 +251,14 @@ footer a {
                 height: auto;
                 grid-template-columns: repeat(2, 1fr);
             }
+
         .prebook-area,
         .gears {
             flex-direction: column;
         }
 
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-    /* Trash */
-    /* 
-    .prebook-area {
-        width:100%;
+        .nav-link,
+        .logo-area {
+            display: none;
+        }
     }
-
-    .prebook-area {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    
-
-    
-} */
