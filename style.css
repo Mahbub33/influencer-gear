@@ -25,7 +25,7 @@ nav {
 }
 
 .nav-header {
-        font-size: 24px;
+    font-size: 24px;
 }
 
 .nav-link a {
@@ -41,9 +41,20 @@ nav {
  /* Prebook area starts*/
 
 main {
-    max-width: 1047px;
+    /* border: 1px solid red; */
+    max-width: 1200px;
     margin: Auto;
     padding-top: 100px;
+}
+
+.prebook-area>div {
+    /* border: 1px solid red; */
+    padding: 0 50px 15px 20px;
+}
+
+.prebook-area > Div > H1 +p {
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 .prebook-area {
@@ -52,6 +63,7 @@ main {
 
 .prebook-header {
     font-size: 52px;
+    margin-bottom:0;
 
 }
 
@@ -87,31 +99,31 @@ main {
 }
 
 .gears {
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .gear {
+    /* border: 1px solid red; */
     width: 329px;
     height: 476px;
     margin: 15px;
     padding: 17px;
+    border-radius: 5px;
     box-shadow: 2px 2px 50px lightgray;
 }
 
-.gear-photo{
-
-}
 
 .gear-photo img {
     width: 329px; 
     height: 256px;
-    margin:;
 }
 
 .gear-name {
     font-size: 28px;
-    margin-top:5px;
+    margin-top:10px;
+    margin-bottom:0px;
 }
 
 .gear-name+p {
@@ -119,21 +131,36 @@ main {
     margin:0;
 }
 
-.gear-rating {
-
-}
-
-.full-star {
-    color: gold;
-}
-
+.full-star,
 .half-star {
     color: gold;
 }
+
 .gear-rating span{
     padding-left: 10px;
 }
 
 .gear-other-info {
     font-size: 14px;
+}
+
+.see-more{
+    font-size: 24px;
+    color: #FF6363;
+    text-align: right;
+}
+
+footer {
+
+    background: black;
+    color:white;
+    text-align: center;
+}
+
+footer a {
+    font-size: 2em;
+}
+
+.footer-anchor{
+    color:white;
 }
